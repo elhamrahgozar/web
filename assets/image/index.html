@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>chaarceramic</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  </head>
+  <body>
+    <section id="banner">
+      <div class="banner-text">
+        <h1>chaar ceramic studio</h1>
+        <p>HANDMADE CERAMIC AND UNIQUE POTTERY</p>
+        <div class="banner-btn">
+          <a href="#shop">catalog</a>
+        </div>
+      </div>
+    </section>
+
+    <div id="sidenav">
+      <nav>
+        <ul>
+          <li><a href="#banner">home</a></li>
+          <li><a href="#shop">catalog</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="menubtm">
+      <img src="../image/menuu.jpg" id="menu" />
+    </div>
+
+    <!--catalog-->
+    <section id="shop">
+      <div class="title-text">
+        <h2>catalog</h2>
+        <p>you may also like</p>
+      </div>
+
+      <div class="shop-box">
+        <div class="shops-img">
+          <img src="../image/IMG_3482.JPG" >
+          <div class="overlay">
+          </div>
+          <div class="shop-desc">
+            <h1>bowl</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+          </div>
+      </div>
+        
+      <div class="shops-img">
+       <img src="../image/IMG_3658.JPG" >
+       <div class="overlay">
+       </div>
+       <div class="shop-desc">
+        <h1>mug  </h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+      </div>
+      </div>
+
+      <div class="shops-img">
+       <img src="../image/IMG_3558.JPG" >
+       <div class="overlay">
+       </div>
+       <div class="shop-desc">
+        <h1>plate</h1>
+        <hr>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+      </div>
+      </div>
+
+      <div class="shops-img">
+        <img src="../image/IMG_3539.JPG" >
+        <div class="overlay">
+        </div>
+        <div class="shop-desc">
+            <h1>Candlestick</h1>
+            <hr>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit..</p>
+          </div>
+       </div>
+    </section>
+
+
+
+    <!--about-->
+<section id="about">
+    <div class="title-text">
+        <h2>about us</h2>
+    </div>
+    <div class="about-box">
+        <div class="aboutes">
+            <p>Team Chaar started its professional and independent activity in February 2020.
+                And our goal is always to transfer the sense of forgotten life to today's machine flow of people.</p>
+        </div>
+
+        <div class="aboutes-img">
+        <img src="../image/unnamed.jpg" >
+        </div>
+    </div>
+
+</section>
+
+
+<!--contact-->
+<section id="contact">
+    <div class="title-text">
+    <h2>contact us</h2>
+    </div>
+    <div class="contact-box">
+        <p>Complete the form below to contact us</p>
+        <form action="comment.aspx" method="post">
+            <div class="form-group">
+                <label > Name</label>
+                <input type=" text" name="name">
+            </div>
+            <div class="form-group">
+                <label >Email</label>
+                <input type="email" name="email">
+            </div>
+            <div class="form-group">
+                <label >message text</label>
+                <textarea name="message-box"  cols="20" rows="4"></textarea>
+
+            </div>
+            <input class="btn-submit" type="submit" value="send">
+        </form>
+
+    </div>
+
+</section>
+
+<section class="footer"> 
+    <div class="box">
+        <h4>email addres</h4>
+        <p>chaarceramic@gmail.com</p>
+
+    </div>
+    <div class="box">
+        <h4>instagram</h4>
+        <p>chaarceramic</p>
+
+    </div>
+    <div class="box">
+        <h4>addres studio</h4>
+        <p>enghelab street</p>
+
+    </div>
+
+</section>
+
+
+
+
+
+    <script>
+      var menubtm = document.getElementById("menubtm");
+      var menu = document.getElementById("menu");
+      var sidenav = document.getElementById("sidenav");
+
+      sidenav.style.right = "-150px";
+      menubtm.onclick = function () {
+        if (sidenav.style.right == "-150px") {
+          sidenav.style.right = "0";
+        } else {
+          sidenav.style.right = "-150px";
+        }
+      };
+
+      var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 800,
+	speedAsDuration: true
+});
+    </script>
+  </body>
+</html>
